@@ -15,7 +15,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, self-test in progress, [1-9]0% remaining$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, old test of type (S|L) not run at (Sun|Mon|Tue|Wed|Thu|Fri|Sat) \w{3} [ :[:digit:]]{11} [0-9]{4} [A-Z]+, starting now.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Home page is http://smartmontools\.sourceforge\.net/$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Monitoring [[:digit:]]+ ATA and [[:digit:]]+ SCSI devices
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Monitoring [[:digit:]]+ ATA and [[:digit:]]+ (SCSI|NVMe) devices
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Opened configuration file /etc/smartd\.conf$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Sending warning via [^[:space:]]+ to [^[:space:]]+ \.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Warning via [^[:space:]]+ to [^[:space:]]+: successful$
@@ -23,4 +23,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd has fork\(\)ed into background mode\. New PID=[[:digit:]]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: smartd version [.[:digit:]]+ (\[[-_[:alnum:]]+\] )?Copyright \(C\) 2002-[[:digit:]]+ Bruce Allen$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]:[[:space:]]*$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, state (read from|written to) /var/lib/smartmontools/smartd\.[-_[:alnum:]]+\.ata\.state$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smartd\[[[:digit:]]+\]: Device: /dev/[^[:space:]]+( \[[_/[:alnum:][:space:]]+\])?( \[SAT\])?, state (read from|written to) /var/lib/smartmontools/smartd\.[-_[:alnum:]]+\.(ata|nvme)\.state$
